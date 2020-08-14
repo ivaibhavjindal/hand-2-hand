@@ -44,7 +44,7 @@ function Header({ classes }) {
   const [isMobileNavOpen, toggleShowMobileNavLinks] = useToggle();
   return (
     <div>
-      <AppBar position="static" className={classes.root}>
+      <AppBar position="sticky" className={classes.root}>
         <Toolbar>
           <IconButton
             edge="start"
@@ -56,7 +56,7 @@ function Header({ classes }) {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-            Hand2Hand
+            <NavLink to="/">Hand2Hand</NavLink>
           </Typography>
           <HeaderLinks {...classes} mobile={false} />
         </Toolbar>

@@ -9,7 +9,7 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 
 function Copyright({ icon }) {
   return (
-    <Typography color="white">
+    <Typography>
       {`Copyright © `}
       <Link
         className={icon}

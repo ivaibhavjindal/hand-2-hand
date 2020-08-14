@@ -1,5 +1,6 @@
 export const styles = (theme) => ({
   root: {
+    zIndex: theme.zIndex.drawer + 1,
     background: "rgba(0,0,0,.9)",
     boxShadow: "0 3px 5px 2px rgba(0, 0, 0, .3)",
   },
@@ -24,6 +25,10 @@ export const styles = (theme) => ({
       marginLeft: theme.spacing(5),
     },
     flexGrow: 1,
+    "& a": {
+      color: "rgba(255, 255, 255, .98)",
+      textDecoration: "none",
+    },
   },
   mobileNavLinks: {
     margin: "0 auto",

@@ -1,8 +1,7 @@
 export const styles = (theme) => ({
   root: {
-    display: "flex",
-    flexDirection: "column",
-    minHeight: "100vh",
+    flexShrink: 0,
+    zIndex: theme.zIndex.drawer + 1,
   },
   icon: {
     paddingTop: ".6rem",

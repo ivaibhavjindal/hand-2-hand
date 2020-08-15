@@ -43,10 +43,6 @@ function DashBoard({ classes }) {
           eleifend. Commodo viverra maecenas accumsan lacus vel facilisis. Nulla
           posuere sollicitudin aliquam ultrices sagittis orci a.
         </Typography>
-        <h1>Hello</h1>
-        <h1>Hello</h1> <h1>Hello</h1> <h1>Hello</h1> <h1>Hello</h1>{" "}
-        <h1>Hello</h1>
-        <h1>Hello</h1>
       </main>
     </div>
   );

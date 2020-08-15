@@ -9,6 +9,7 @@ import {
   Box,
   withStyles,
   Fab,
+  Container,
 } from "@material-ui/core";
 import NavigationIcon from "@material-ui/icons/Navigation";
 import WaveBorder from "./WaveBorder";
@@ -27,7 +28,7 @@ function Landing(props) {
       "Want Urgent, Time Definite Deliveries at a Lower Cost   ?",
     ];
     const interval = setInterval(() => {
-      console.log(sentence);
+      // console.log(sentence);
       setSentence((sentence) =>
         sentence === sentences[0] ? sentences[1] : sentences[0]
       );
@@ -98,6 +99,26 @@ function Landing(props) {
         className={classes.waveBorder}
         animationNegativeDelay={2}
       />
+      <Box pt={3} pb={2} className={classes.textCenter}>
+        <Container maxWidth="sm">
+          <Typography className={classes.heading} component="h1">
+            Getting Started.
+          </Typography>
+          <Typography color="textSecondary" variant="body2" component="h6">
+            Three easy steps to get Going?
+          </Typography>
+        </Container>
+      </Box>
+      <Box pt={3} pb={2} className={classes.textCenter}>
+        <Container maxWidth="xs">
+          <Typography className={classes.heading} component="h1">
+            Our Story.
+          </Typography>
+          <Typography color="textSecondary" variant="body2" component="h6">
+            Get to know how it all started?
+          </Typography>
+        </Container>
+      </Box>
     </Fragment>
   );
 }

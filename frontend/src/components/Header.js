@@ -11,6 +11,14 @@ import { withStyles } from "@material-ui/core/styles";
 import { styles } from "../styles/Header";
 import { useToggle } from "../hooks/useToggle";
 
+const tabs = [
+  { label: "Home", to: "/" },
+  { label: "Explore", to: "/explore" },
+  { label: "Contact Us", to: "/contactus" },
+  { label: "Sign In", to: "/users/signin" },
+  { label: "Sign Up", to: "/users/signup" },
+];
+
 const HeaderLinks = (props) => {
   const {
     mobile,
@@ -20,12 +28,13 @@ const HeaderLinks = (props) => {
     displayBlock,
     displayNone,
   } = props;
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = React.useState("Home");
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
   return (
     <Tabs
+      variant="scrollable"
       value={value}
       onChange={handleChange}
       className={`${mobile ? mobileNavLinks : laptopNavLinks} ${
@@ -33,9 +42,18 @@ const HeaderLinks = (props) => {
       }`}
       aria-label="Header Links"
     >
-      <Tab label="Explore" />
-      <Tab label="Contact Us" />
-      <Tab label={"Sign In"} component={NavLink} to="/users/signin" />
+      {tabs.map((tab, i) => (
+        <Tab
+          index={i}
+          value={tab.label}
+          key={tab.label}
+          to={tab.to}
+          label={tab.label}
+          component={NavLink}
+          id={tab.label}
+          aria-controls={tab.label}
+        />
+      ))}
     </Tabs>
   );
 };

@@ -1,12 +1,14 @@
 export const styles = (theme) => ({
+  textCenter: {
+    textAlign: "center",
+  },
   heading: {
-    letterSpacing: ".5rem",
     fontWeight: "800",
     [theme.breakpoints.up("xs")]: {
-      fontSize: theme.typography.h5.fontSize,
+      fontSize: theme.typography.h3.fontSize,
     },
     [theme.breakpoints.up("md")]: {
-      fontSize: theme.typography.h3.fontSize,
+      fontSize: theme.typography.h2.fontSize,
     },
   },
   extraLargeButtonLabel: {

@@ -46,7 +46,6 @@ export function DirectionSnackbar({
 }
 
 function ContactUsForm(props) {
-  console.log(props);
   const {
     firstName,
     lastName,

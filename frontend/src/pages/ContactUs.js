@@ -16,6 +16,8 @@ import ContactUsForm from "../components/ContactUsForm";
 import ContactUsTeamCard from "../components/ContactUsTeamCard";
 import ContactUsTechIcon from "../components/ContactUsTechIcon";
 import { useToggle } from "../hooks/useToggle";
+import { useMutation } from "@apollo/client";
+import ADD_MESSAGE from "../graphql/mutations/AddMessage";
 
 function ContactUs({ classes }) {
   const [firstName, handleFirstNameChange, resetFirstName] = useFormInput("");
@@ -26,12 +28,24 @@ function ContactUs({ classes }) {
   const [snackbarState, toggleSnackbarState] = useToggle(false);
   const [transition, setTransition] = React.useState(undefined);
 
+  const [
+    addMessage,
+    { data, loading: addMessageLoading, error: addMessageError },
+  ] = useMutation(ADD_MESSAGE);
+
   const handleSubmit = (Transition) => (e) => {
     e.preventDefault();
     console.log("First Name:", firstName);
     console.log("Last Name:", lastName);
     console.log("Email:", email);
     console.log("Message:", message);
+    const variables = {
+      firstName: firstName,
+      lastName: lastName,
+      email: email,
+      message: message,
+    };
+    addMessage({ variables: variables });
     resetFirstName();
     resetLastName();
     resetEmail();
@@ -39,6 +53,10 @@ function ContactUs({ classes }) {
     setTransition(() => Transition);
     toggleSnackbarState();
   };
+
+  if (addMessageLoading) return <h3>loading</h3>;
+  if (addMessageError) return <h3>Error</h3>;
+  console.log(data);
 
   return (
     <div>

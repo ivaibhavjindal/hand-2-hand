@@ -38,7 +38,12 @@ function Landing(props) {
   const { classes, theme } = props;
   return (
     <Fragment>
-      <Box display="flex" justifyContent="center" className={classes.wrapper}>
+      <Box
+        display="flex"
+        id="top"
+        justifyContent="center"
+        className={classes.wrapper}
+      >
         <Card className={classes.card} data-aos-delay="200" data-aos="zoom-in">
           <Box justifyContent="space-between">
             <Grid container spacing={1}>
@@ -88,6 +93,7 @@ function Landing(props) {
       <Fab
         variant="extended"
         color="secondary"
+        href="#top"
         className={classes.navigationTop}
       >
         <NavigationIcon />

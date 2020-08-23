@@ -2,6 +2,9 @@ export const styles = (theme) => ({
   textCenter: {
     textAlign: "center",
   },
+  secondaryBackground: {
+    backgroundColor: theme.palette.secondary.main,
+  },
   heading: {
     fontWeight: "800",
     [theme.breakpoints.up("xs")]: {
@@ -81,6 +84,13 @@ export const styles = (theme) => ({
     bottom: "0",
     right: "0",
     zIndex: "600",
+  },
+  timelineItemPaper: {
+    padding: theme.spacing(1.5, 2.5),
+    textAlign: "center",
+    "& h2": {
+      fontWeight: "550",
+    },
   },
   transition: {
     animation: `$fadein 1s`,

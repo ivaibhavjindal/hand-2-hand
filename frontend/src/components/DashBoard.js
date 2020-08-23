@@ -3,8 +3,10 @@ import SideDrawer from "./SideDrawer";
 import { useToggle } from "../hooks/useToggle";
 import { withStyles, Typography } from "@material-ui/core";
 import { styles } from "../styles/DashBoard";
+import UserTutorialCarousel from "./UserTutorialCarousel";
 
 function DashBoard({ classes }) {
+  const [carouselState, toggleCarouselState] = useToggle(true);
   const [drawerState, toggleDrawerState] = useToggle(false);
   return (
     <div className={classes.root}>
@@ -43,6 +45,11 @@ function DashBoard({ classes }) {
           eleifend. Commodo viverra maecenas accumsan lacus vel facilisis. Nulla
           posuere sollicitudin aliquam ultrices sagittis orci a.
         </Typography>
+        <UserTutorialCarousel
+          {...classes}
+          carouselState={carouselState}
+          toggleCarouselState={toggleCarouselState}
+        />
       </main>
     </div>
   );

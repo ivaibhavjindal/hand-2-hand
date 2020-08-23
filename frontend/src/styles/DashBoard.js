@@ -42,4 +42,12 @@ export const styles = (theme) => ({
   content: {
     margin: theme.spacing(2),
   },
+  carouselRoot: {
+    position: "relative",
+    width: "100%",
+    height: 500,
+  },
+  carousel: {
+    position: "absolute",
+  },
 });

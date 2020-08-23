@@ -1,8 +1,8 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import Landing from "./components/Landing";
-import SignIn from "./components/SignIn";
-import SignUp from "./components/SignUp";
+import Landing from "./pages/Landing";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
 import DashBoard from "./components/DashBoard";
 import ContactUs from "./pages/ContactUs";
 

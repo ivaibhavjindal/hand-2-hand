@@ -11,8 +11,10 @@ import {
   Fab,
   Container,
 } from "@material-ui/core";
+import LandingCarousel from "../components/LandingCarousel";
+import LandingTimeline from "../components/LandingTimeline";
 import NavigationIcon from "@material-ui/icons/Navigation";
-import WaveBorder from "./WaveBorder";
+import WaveBorder from "../components/WaveBorder";
 import { NavLink } from "react-router-dom";
 import { styles } from "../styles/Landing";
 
@@ -50,9 +52,7 @@ function Landing(props) {
               <Grid item xs={12} md={5} style={{ textAlign: "center" }}>
                 <Box mb={1}>
                   <Typography component="h1" className={classes.heading}>
-                    HAND <br />
-                    2 <br />
-                    HAND
+                    HAND 2 HAND
                   </Typography>
                 </Box>
                 <Box mb={2}>
@@ -114,6 +114,9 @@ function Landing(props) {
             Three easy steps to get Going?
           </Typography>
         </Container>
+        <Container maxWidth="md">
+          <LandingCarousel />
+        </Container>
       </Box>
       <Box pt={3} pb={2} className={classes.textCenter}>
         <Container maxWidth="xs">
@@ -123,6 +126,9 @@ function Landing(props) {
           <Typography color="textSecondary" variant="body2" component="h6">
             Get to know how it all started?
           </Typography>
+        </Container>
+        <Container maxWidth="md">
+          <LandingTimeline {...classes} />
         </Container>
       </Box>
     </Fragment>

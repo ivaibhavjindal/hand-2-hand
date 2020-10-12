@@ -3,6 +3,7 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
 import Link from "@material-ui/core/Link";
+import { useTranslation } from "react-i18next";
 import { withStyles } from "@material-ui/core/styles";
 import { styles } from "../styles/Footer";
 import FavoriteIcon from "@material-ui/icons/Favorite";
@@ -23,10 +24,17 @@ function Copyright({ icon }) {
 }
 
 function Footer({ classes }) {
+  const { t, i18n } = useTranslation();
+  console.log(t);
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+  };
   return (
     <div className={classes.root}>
       <CssBaseline />
       <footer className={classes.footer}>
+      <button onClick={() => changeLanguage("en")}>EN</button>
+      <button onClick={() => changeLanguage("fr")}>FR</button>
         <Container maxWidth="sm">
           <Typography>
             Made with <FavoriteIcon className={classes.icon} />

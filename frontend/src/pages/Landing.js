@@ -17,6 +17,7 @@ import NavigationIcon from "@material-ui/icons/Navigation";
 import WaveBorder from "../components/WaveBorder";
 import { NavLink } from "react-router-dom";
 import { styles } from "../styles/Landing";
+import { Trans } from "react-i18next";
 
 function Landing(props) {
   const sentences = {
@@ -108,7 +109,9 @@ function Landing(props) {
       <Box pt={3} pb={2} className={classes.textCenter}>
         <Container maxWidth="sm">
           <Typography className={classes.heading} component="h1">
-            Getting Started.
+            <Trans i18nKey={"landing.headings.gettingStarted"} >
+              Getting Started.
+            </Trans>
           </Typography>
           <Typography color="textSecondary" variant="body2" component="h6">
             Three easy steps to get Going?
@@ -121,7 +124,9 @@ function Landing(props) {
       <Box pt={3} pb={2} className={classes.textCenter}>
         <Container maxWidth="xs">
           <Typography className={classes.heading} component="h1">
-            Our Story.
+            <Trans i18nKey={"landing.headings.ourStory"} >  
+              Our Story.
+            </Trans>
           </Typography>
           <Typography color="textSecondary" variant="body2" component="h6">
             Get to know how it all started?

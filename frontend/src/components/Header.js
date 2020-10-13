@@ -10,16 +10,19 @@ import { NavLink } from "react-router-dom";
 import { withStyles } from "@material-ui/core/styles";
 import { styles } from "../styles/Header";
 import { useToggle } from "../hooks/useToggle";
+import { useTranslation } from "react-i18next";
 
 const tabs = [
-  { label: "Home", to: "/" },
-  { label: "Explore", to: "/explore" },
-  { label: "Contact Us", to: "/contactus" },
-  { label: "Sign In", to: "/users/signin" },
-  { label: "Sign Up", to: "/users/signup" },
+  { label: "Home", locales: "header.home", to: "/" },
+  { label: "Explore", locales: "header.explore", to: "/explore" },
+  { label: "Contact Us", locales: "header.contactUs", to: "/contactus" },
+  { label: "Sign In", locales: "header.signIn", to: "/users/signin" },
+  { label: "Sign Up", locales: "header.signUp", to: "/users/signup" },
 ];
 
 const HeaderLinks = (props) => {
+  const { t } = useTranslation();
+
   const {
     mobile,
     laptopNavLinks,
@@ -48,7 +51,7 @@ const HeaderLinks = (props) => {
           value={tab.label}
           key={tab.label}
           to={tab.to}
-          label={tab.label}
+          label={t(tab.locales)}
           component={NavLink}
           id={tab.label}
           aria-controls={tab.label}

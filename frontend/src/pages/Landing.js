@@ -17,18 +17,19 @@ import NavigationIcon from "@material-ui/icons/Navigation";
 import WaveBorder from "../components/WaveBorder";
 import { NavLink } from "react-router-dom";
 import { styles } from "../styles/Landing";
-import { Trans } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 function Landing(props) {
+  const { t } = useTranslation();
   const sentences = {
-    0: "Travelling Outstation and want to Earn while Travelling ?",
-    1: "Looking for Urgent, Time Definite Deliveries at a Lower Cost ?",
+    0: t('landing.traveller'),
+    1: t('landing.user'),
   };
   const [sentence, setSentence] = useState(sentences[0]);
   useEffect(() => {
     const sentences = [
-      "Travelling Outstation and want to Earn while Travelling ?",
-      "Want Urgent, Time Definite Deliveries at a Lower Cost   ?",
+      t('landing.traveller'),
+      t('landing.user'),
     ];
     const interval = setInterval(() => {
       // console.log(sentence);
@@ -74,7 +75,9 @@ function Landing(props) {
                     className={classes.extraLargeButton}
                     classes={{ label: classes.extraLargeButtonLabel }}
                   >
-                    SIGNUP FOR FREE NOW!
+                    <Trans i18nKey={"landing.buttons.signUp"}>
+                      SignUp For Free Now!
+                    </Trans>
                   </Button>
                 </NavLink>
               </Grid>
@@ -114,7 +117,9 @@ function Landing(props) {
             </Trans>
           </Typography>
           <Typography color="textSecondary" variant="body2" component="h6">
+            <Trans i18nKey={"landing.subHeadings.threeEasySteps"}>
             Three easy steps to get Going?
+            </Trans>
           </Typography>
         </Container>
         <Container maxWidth="md">
@@ -129,7 +134,9 @@ function Landing(props) {
             </Trans>
           </Typography>
           <Typography color="textSecondary" variant="body2" component="h6">
-            Get to know how it all started?
+            <Trans i18nKey={"landing.subHeadings.getToKnow"}>
+              Get to know how it all started?
+            </Trans>
           </Typography>
         </Container>
         <Container maxWidth="md">

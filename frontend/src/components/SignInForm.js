@@ -11,6 +11,7 @@ import TextField from "@material-ui/core/TextField";
 import Link from "@material-ui/core/Link";
 import Grid from "@material-ui/core/Grid";
 import { NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function SignInForm(props) {
   const {
@@ -23,6 +24,9 @@ function SignInForm(props) {
     toggleShowPassword,
     ...classes
   } = props;
+
+  const { t } = useTranslation();
+
   return (
     <form className={classes.form} onSubmit={handleSubmit} noValidate>
       <TextField
@@ -31,7 +35,7 @@ function SignInForm(props) {
         required
         fullWidth
         id="email"
-        label="Email Address"
+        label={t('signIn.form.email')}
         name="email"
         autoComplete="email"
         autoFocus
@@ -39,7 +43,7 @@ function SignInForm(props) {
         onChange={handleEmailChange}
       />
       <FormControl variant="outlined" fullWidth>
-        <InputLabel htmlFor="password">Password *</InputLabel>
+        <InputLabel htmlFor="password">{`${t('signIn.form.pass')}*`}</InputLabel>
         <OutlinedInput
           name="password"
           id="password"
@@ -68,12 +72,12 @@ function SignInForm(props) {
         color="primary"
         className={classes.submit}
       >
-        Sign In
+        {t('signIn.form.submit')}
       </Button>
       <Grid container justify="flex-end">
         <Grid item>
           <Link component={NavLink} to="/users/signup" variant="body2">
-            Don't have an account? Sign up
+            {t('signIn.signUp')}
           </Link>
         </Grid>
       </Grid>

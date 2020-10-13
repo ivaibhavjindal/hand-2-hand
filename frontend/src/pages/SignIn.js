@@ -4,6 +4,7 @@ import Paper from "@material-ui/core/Paper";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 import Typography from "@material-ui/core/Typography";
+import { Trans } from "react-i18next";
 import { withStyles } from "@material-ui/core/styles";
 import { styles } from "../styles/SignIn";
 import { useFormInput } from "../hooks/useFormInput";
@@ -32,7 +33,7 @@ function SignIn({ classes }) {
           <LockOutlinedIcon />
         </Avatar>
         <Typography component="h1" variant="h5">
-          Sign in
+          <Trans i18nKey={"signIn.heading"}>Sign in</Trans>
         </Typography>
         <SignInForm
           email={email}

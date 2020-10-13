@@ -1,8 +1,91 @@
 {
+    "header": {
+        "home": "Home",
+        "explore": "Explore",
+        "contactUs": "Contact Us",
+        "signIn": "Sign In",
+        "signUp": "Sign Up"
+    },
+    "footer": {
+        "locales": {
+            "en": "English",
+            "hi": "Hindi",
+            "fr": "French",
+            "de": "German",
+            "it": "Italian",
+            "es": "Spanish"
+        },
+        "madeWith": "Made With",
+        "copyright": "Copyright"
+    },
     "landing": {
+        "traveller": "Travelling Outstation and want to Earn while Travelling ?",
+        "user": "Want Urgent, Time Definite Deliveries at a Lower Cost ?",
         "headings" : {
             "gettingStarted": "Getting Started.",
             "ourStory": "Our Story."
+        },
+        "subHeadings": {
+            "threeEasySteps": "Three easy steps to get Going?",
+            "getToKnow": "Get to know how it all started?"
+        },
+        "buttons": {
+            "signUp": "SignUp For Free Now!"
+        },
+        "timeline": {
+            "date1": "Aug 2019",
+            "date2": "July 2020",
+            "date3": "July 2020",
+            "date4": "Aug 2020",
+            "head1": "HackerStack Hackathon",
+            "head2": "Full Stack Project",
+            "head3": "Hand-2-Hand Repository",
+            "head4": "Eat Sleep Code Repeat",
+            "subHead1": "The idea was proposed by Atul during the first Hackathon we attended, though we didn't win it, The idea stayed with us",
+            "subHead2": "We were discussing about ideas to make up a full stack project and this one idea stood out.",
+            "subHead3": "We started up with the project, set up a github repository and started coding.",
+            "subHead4": "We had good time off College so were coding throughout to finish it as soon as possible."
         }
+    },
+    "contactUs": {
+        "headings": {
+            "contact": "Contact Us.",
+            "team": "Our Team.",
+            "techUsed": "Technologies Used."
+        },
+        "subHeadings": {
+            "gotQuestion": "Got a Question ?",
+            "haveQuestions": "Have any questions? We’d love to hear from you.",
+            "reachOut": "Feel free to reach out at mentioned Social profiles"
+        },
+        "cards": {
+            "pos1": "Front-End Developer",
+            "pos2": "Back-End Developer",
+            "desc1": "Hi There! I designed the frontend of this site. I am a computer science undergrad, currently in my sophomore year. I share a keen interest in Web Development and Deep Learning. Reach out in case of any queries or just want to say Hi!",
+            "desc2": "Hi There! I designed the backend of this site. I am an information technology undergrad, currently in my sophomore year. I share a keen interest in Web Development and Deep Learning. Reach out in case of any queries or just want to say Hi!"
+        },
+        "checkGithub": "Check Github for complete Code"
+    },
+    "signIn": {
+        "heading": "Sign in",
+        "form": {
+            "email": "Email Address",
+            "pass": "Password",
+            "submit": "Sign in"
+        },
+        "signUp": "Don't have an account? Sign up"
+    },
+    "signUp": {
+        "heading": "Sign up",
+        "form": {
+            "fname": "First Name",
+            "lname": "Last Name",
+            "email": "Email Address",
+            "pass": "Password",
+            "state": "State",
+            "city": "City",
+            "submit": "Sign up"
+        },
+        "signIn": "Already have an account? Sign in"
     }
 }

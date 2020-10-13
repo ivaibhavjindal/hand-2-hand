@@ -15,6 +15,7 @@ export const styles = (theme) => ({
     },
   },
   extraLargeButtonLabel: {
+    textTransform: "uppercase",
     fontSize: theme.typography.caption.fontSize,
     [theme.breakpoints.up("sm")]: {
       fontSize: theme.typography.body1.fontSize,

@@ -2,7 +2,7 @@ const { GraphQLObjectType, GraphQLSchema } = require("graphql");
 const hello = require("../models/helloModels.js");
 const message = require("../models/messageModels.js");
 const Query = new GraphQLObjectType({
-  name: "Querry",
+  name: "Query",
   fields: {
     hello: hello.queries.hello,
     getAllMessage: message.queries.getAllMessage,

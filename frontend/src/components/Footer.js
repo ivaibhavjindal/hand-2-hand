@@ -39,20 +39,27 @@ function Footer({ classes }) {
     fr: "fr",
     hi: "hi",
     it: "it",
-  }
+  };
 
   return (
     <div className={classes.root}>
       <CssBaseline />
       <footer className={classes.footer}>
-        <ButtonGroup variant="contained" color="secondary" aria-label="Change Language">
-          {Object.keys(locales).map((k) => 
-            <Button onClick={() => changeLanguage(locales[k])}>
-              {t(`footer.locales.${locales[k]}`)}
-            </Button>
-          )}
-        </ButtonGroup>
         <Container maxWidth="lg">
+          <ButtonGroup
+            variant="contained"
+            color="secondary"
+            aria-label="Change Language"
+          >
+            {Object.keys(locales).map((k) => (
+              <Button
+                className={classes.localeButton}
+                onClick={() => changeLanguage(locales[k])}
+              >
+                {t(`footer.locales.${locales[k]}`)}
+              </Button>
+            ))}
+          </ButtonGroup>
           <Typography>
             {t("footer.madeWith")} <FavoriteIcon className={classes.icon} />
           </Typography>

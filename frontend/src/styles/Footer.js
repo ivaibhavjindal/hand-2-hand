@@ -7,6 +7,14 @@ export const styles = (theme) => ({
     paddingTop: ".6rem",
     color: "red",
   },
+  localeButton: {
+    [theme.breakpoints.down("md")]: {
+      fontSize: "8px",
+    },
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "3px",
+    },
+  },
   footer: {
     justifyContent: "center",
     textAlign: "center",

@@ -77,15 +77,6 @@ export const styles = (theme) => ({
   waveBorder: {
     paddingTop: theme.spacing(4),
   },
-  navigationTop: {
-    fontWeight: "bold",
-    marginBottom: "5rem",
-    marginRight: ".75rem",
-    position: "fixed",
-    bottom: "0",
-    right: "0",
-    zIndex: "600",
-  },
   timelineItemPaper: {
     padding: theme.spacing(1.5, 2.5),
     textAlign: "center",

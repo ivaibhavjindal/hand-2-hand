@@ -13,6 +13,8 @@ const User = require("../src/mongoSchema/authSchema");
 const passportLocalMongoose = require("passport-local-mongoose");
 
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json())
+app.use(bodyParser.text({ type: 'application/graphql' }));
 app.use(cors());
 app.use(
   require("express-session")({

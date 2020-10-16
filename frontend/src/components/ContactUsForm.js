@@ -8,6 +8,7 @@ import {
   IconButton,
 } from "@material-ui/core";
 import CloseIcon from "@material-ui/icons/Close";
+import { useTranslation } from "react-i18next";
 
 function TransitionRight(props) {
   return <Slide {...props} direction="right" />;
@@ -18,6 +19,7 @@ export function DirectionSnackbar({
   snackbarState,
   toggleSnackbarState,
 }) {
+  const { t } = useTranslation();
   return (
     <div>
       <Snackbar
@@ -29,7 +31,7 @@ export function DirectionSnackbar({
         autoHideDuration={6000}
         onClose={toggleSnackbarState}
         TransitionComponent={transition}
-        message="Message Succesfully Sent!"
+        message={t("contactUs.form.success")}
         key={transition ? transition.name : ""}
         action={
           <IconButton
@@ -58,6 +60,9 @@ function ContactUsForm(props) {
     handleSubmit,
     ...classes
   } = props;
+
+  const { t } = useTranslation();
+
   return (
     <form
       className={classes.form}
@@ -73,7 +78,7 @@ function ContactUsForm(props) {
             required
             fullWidth
             id="firstName"
-            label="First Name"
+            label={t("contactUs.form.fname")}
             autoFocus
             value={firstName}
             onChange={handleFirstNameChange}
@@ -85,7 +90,7 @@ function ContactUsForm(props) {
             required
             fullWidth
             id="lastName"
-            label="Last Name"
+            label={t("contactUs.form.lname")}
             name="lastName"
             autoComplete="lname"
             value={lastName}
@@ -98,7 +103,7 @@ function ContactUsForm(props) {
             required
             fullWidth
             id="email"
-            label="Email Address"
+            label={t("contactUs.form.email")}
             name="email"
             autoComplete="email"
             value={email}
@@ -112,7 +117,7 @@ function ContactUsForm(props) {
             required
             fullWidth
             id="message"
-            label="Message"
+            label={t("contactUs.form.message")}
             name="message"
             autoComplete="message"
             multiline
@@ -130,7 +135,7 @@ function ContactUsForm(props) {
         color="primary"
         className={classes.submit}
       >
-        Send Message
+        {t("contactUs.form.submit")}
       </Button>
       <DirectionSnackbar {...props} />
     </form>

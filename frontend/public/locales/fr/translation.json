@@ -1,8 +1,102 @@
 {
-    "landing": {
-        "headings" : {
-            "gettingStarted": "Commencer.",
-            "ourStory": "Notre Histoire."
-        }
+  "header": {
+    "home": "Accueil",
+    "explore": "Explore",
+    "contactUs": "Nous Contacter",
+    "signIn": "Se connecter",
+    "signUp": "S'inscrire"
+  },
+  "footer": {
+    "locales": {
+      "en": "Anglais",
+      "hi": "Hindi",
+      "fr": "Français",
+      "de": "German",
+      "it": "Italien",
+      "es": "Espagnol"
+    },
+    "madeWith": "Fabriqué avec",
+    "copyright": "Droits d'auteur"
+  },
+  "landing": {
+    "traveller": "Vous voyagez en Outstation et vous voulez gagner en voyageant?",
+    "user": "Vous voulez des livraisons urgentes et à temps précis à moindre coût",
+    "headings": {
+      "gettingStarted": "Commencer.",
+      "ourStory": "Notre Histoire."
+    },
+    "subHeadings": {
+      "threeEasySteps": "Trois étapes faciles pour démarrer?",
+      "getToKnow": "Apprenez à savoir comment tout a commencé?"
+    },
+    "buttons": {
+      "signUp": "Inscrivez-vous gratuitement dès maintenant!"
+    },
+    "timeline": {
+      "date1": "Août 2019",
+      "date2": "Juillet 2020",
+      "date3": "Juillet 2020",
+      "date4": "Août 2020",
+      "head1": "HackerStack Hackathon",
+      "head2": "Projet Full Stack",
+      "head3": "Main-2-Main Dépôt",
+      "head4": "Manger Dormir Chiffre Répéter",
+      "subHead1": "L'idée a été proposée par Atul lors du premier Hackathon auquel nous avons participé, même si nous ne l'avons pas gagnée, l'idée est restée avec nous",
+      "subHead2": "Nous discutions d'idées pour constituer un projet full stack et cette idée s'est démarquée.",
+      "subHead3": "Nous avons démarré le projet, mis en place un référentiel github et commencé le codage.",
+      "subHead4": "Nous avons passé du bon temps en dehors de l'université, nous avons donc codé tout au long pour le terminer dès que possible."
     }
+  },
+  "contactUs": {
+    "headings": {
+      "contact": "Nous Contacter.",
+      "team": "Notre équipe.",
+      "techUsed": "Technologies utilisées."
+    },
+    "form": {
+      "fname": "Prénom",
+      "lname": "Nom de Famille",
+      "email": "Adresse électronique",
+      "message": "Le message",
+      "submit": "Envoyer le message",
+      "success": "Message envoyé avec succès!"
+    },
+    "subHeadings": {
+      "gotQuestion": "Tu as une question?",
+      "haveQuestions": "Avez-vous des questions? Nous serions ravis de vous entendre.",
+      "reachOut": "N'hésitez pas à contacter les profils sociaux mentionné."
+    },
+    "cards": {
+      "pos1": "Développeur frontal",
+      "pos2": "Développeur back-end",
+      "desc1": "Salut! J'ai conçu l'interface de ce site. Je suis un étudiant en informatique, actuellement dans ma deuxième année. Je partage un vif intérêt pour le développement Web et le Deep Learning. Contactez-nous en cas de questions ou si vous voulez simplement dire bonjour!",
+      "desc2": "Salut! J'ai conçu le backend de ce site. Je suis un étudiant de premier cycle en technologie de l'information, actuellement dans ma deuxième année. Je partage un vif intérêt pour le développement Web et le Deep Learning. Contactez-nous en cas de questions ou si vous voulez simplement dire Bonjour!"
+    },
+    "checkGithub": "Vérifiez Github pour le code complet"
+  },
+  "signIn": {
+    "heading": "Se Connecte",
+    "form": {
+      "email": "Adresse électronique",
+      "pass": "Mot de passe",
+      "submit": "Se Connecter"
+    },
+    "signUp": "Vous n'avez pas de compte? S'inscrire"
+  },
+  "signUp": {
+    "heading": "S'inscrire",
+    "form": {
+      "fname": "Prénom",
+      "lname": "Nom de Famille",
+      "email": "Adresse électronique",
+      "pass": "Mot de passe",
+      "state": "Etat",
+      "city": "Ville",
+      "submit": "S'inscrire"
+    },
+    "signIn": "Vous avez déjà un compte? SeConnecter"
+  },
+  "helpers": {
+    "top": "Haut"
+  }
 }

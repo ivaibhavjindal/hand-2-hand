@@ -1,0 +1,102 @@
+{
+  "header": {
+    "home": "Casa",
+    "explore": "Explorar",
+    "contactUs": "Contáctenos",
+    "signIn": "Registrarse",
+    "signUp": "Regístrate"
+  },
+  "footer": {
+    "locales": {
+      "en": "Inglés",
+      "hi": "Hindi",
+      "fr": "Francés",
+      "de": "Alemán",
+      "it": "Italiano",
+      "es": "Español"
+    },
+    "madeWith": "Hecho con",
+    "copyright": "Copyright"
+  },
+  "landing": {
+    "traveller": "¿Viaja fuera de la estación y quiere ganar dinero mientras viaja?",
+    "user": "¿Quiere entregas urgentes y en un plazo definido a un menor costo?",
+    "headings": {
+      "gettingStarted": "Empezando.",
+      "ourStory": "Nuestra historia."
+    },
+    "subHeadings": {
+      "threeEasySteps": "¿Tres sencillos pasos para empezar?",
+      "getToKnow": "¿Sabes cómo empezó todo?"
+    },
+    "buttons": {
+      "signUp": "¡Regístrate gratis ahora!"
+    },
+    "timeline": {
+      "date1": "Ago. De 2019",
+      "date2": "Julio de 2020",
+      "date3": "Julio de 2020",
+      "date4": "Ago. De 2020",
+      "head1": "HackerStack Hackathon",
+      "head2": "Proyecto de pila completa",
+      "head3": "Repositorio Mano-2-Mano",
+      "head4": "Repetir el código del sueño",
+      "subHead1": "La idea fue propuesta por Atul durante el primer Hackathon al que asistimos, aunque no lo ganamos, la idea se nos quedó.",
+      "subHead2": "Estábamos discutiendo sobre ideas para hacer un proyecto de pila completa y esta idea se destacó.",
+      "subHead3": "Comenzamos con el proyecto, configuramos un repositorio de github y comenzamos a codificar.",
+      "subHead4": "Pasamos un buen rato fuera de la universidad, así que estuvimos codificando para terminarlo lo antes posible."
+    }
+  },
+  "contactUs": {
+    "headings": {
+      "contact": "Contáctenos.",
+      "team": "Nuestro equipo.",
+      "techUsed": "Tecnologías utilizadas."
+    },
+    "form": {
+      "fname": "Nombre de pila",
+      "lname": "Apellido",
+      "email": "Dirección de correo electrónico",
+      "message": "Mensaje",
+      "submit": "Enviar mensaje",
+      "success": "¡Mensaje enviado con exito!"
+    },
+    "subHeadings": {
+      "gotQuestion": "¿Tienes alguna pregunta?",
+      "haveQuestions": "¿Tiene alguna pregunta? Nos encantaría saber de ti.",
+      "reachOut": "No dude en comunicarse con los perfiles sociales mencionados"
+    },
+    "cards": {
+      "pos1": "Desarrollador front-end",
+      "pos2": "Desarrollador back-end",
+      "desc1": "¡Hola! Diseñé la interfaz de este sitio. Soy un estudiante de ciencias de la computación, actualmente en mi segundo año. Comparto un gran interés en el desarrollo web y el aprendizaje profundo. Comuníquese con nosotros en caso de cualquier consulta o simplemente quiera saludar.",
+      "desc2": "¡Hola! Diseñé el backend de este sitio. Soy un estudiante de tecnología de la información, actualmente en mi segundo año. Comparto un gran interés en el desarrollo web y el aprendizaje profundo. Comuníquese con nosotros en caso de cualquier consulta o simplemente quiera saludar."
+    },
+    "checkGithub": "Consulte Github para obtener el código completo."
+  },
+  "signIn": {
+    "heading": "Registrarse",
+    "form": {
+      "email": "Dirección de correo electrónico",
+      "pass": "Contraseña",
+      "submit": "Registrarse"
+    },
+    "signUp": "¿No tienes una cuenta? Regístrate"
+  },
+  "signUp": {
+    "heading": "Regístrate",
+    "form": {
+      "fname": "Nombre de pila",
+      "lname": "Apellido",
+      "email": "Dirección de correo electrónico",
+      "pass": "Contraseña",
+      "state": "Estado",
+      "city": "Ciudad",
+      "submit": "Regístrate"
+    },
+    "signIn": "¿Ya tienes una cuenta? Registrarse"
+  },
+  "helpers": {
+    "top": "Parte superior"
+  }
+}

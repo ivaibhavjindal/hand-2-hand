@@ -1,0 +1,102 @@
+﻿{
+  "header": {
+    "home": "Casa",
+    "explore": "Esplorare",
+    "contactUs": "Contattaci",
+    "signIn": "Registrati",
+    "signUp": "Iscriviti"
+  },
+  "footer": {
+    "locales": {
+      "en": "Inglese",
+      "hi": "Hindi",
+      "fr": "Francese",
+      "de": "Tedesco",
+      "it": "Italiano",
+      "es": "Spagnolo"
+    },
+    "madeWith": "Fatto con",
+    "copyright": "Copyright"
+  },
+  "landing": {
+    "traveller": "Viaggi fuori stazione e vuoi guadagnare mentre viaggi?",
+    "user": "Desideri consegne urgenti a tempo determinato a un costo inferiore?",
+    "headings": {
+      "gettingStarted": "Iniziare.",
+      "ourStory": "La nostra storia."
+    },
+    "subHeadings": {
+      "threeEasySteps": "Tre semplici passaggi per iniziare?",
+      "getToKnow": "Scopri come è iniziato tutto?"
+    },
+    "buttons": {
+      "signUp": "Iscriviti gratuitamente ora!"
+    },
+    "timeline": {
+      "date1": "Agosto 2019",
+      "date2": "Luglio 2020",
+      "date3": "Luglio 2020",
+      "date4": "Agosto 2020",
+      "head1": "HackerStack Hackathon",
+      "head2": "Progetto Full Stack",
+      "head3": "Repository Hand-2-Hand",
+      "head4": "Mangia Ripeti il ​​codice del sonno",
+      "subHead1": "L'idea è stata proposta da Atul durante il primo Hackathon a cui abbiamo partecipato, anche se non l'abbiamo vinto. L'idea è rimasta con noi.",
+      "subHead2": "Stavamo discutendo di idee per creare un progetto full stack e questa idea si è distinta.",
+      "subHead3": "Abbiamo iniziato con il progetto, creato un repository GitHub e iniziato a scrivere codice.",
+      "subHead4": "Ci siamo divertiti molto al college, quindi abbiamo programmato tutto per finirlo il prima possibile."
+    }
+  },
+  "contactUs": {
+    "headings": {
+      "contact": "Contattaci.",
+      "team": "La nostra squadra.",
+      "techUsed": "Tecnologie utilizzate."
+    },
+    "form": {
+      "fname": "Nome di battesimo",
+      "lname": "Cognome",
+      "email": "Indirizzo email",
+      "message": "Messaggio",
+      "submit": "Invia messaggio",
+      "success": "Messaggio inviato con successo!"
+    },
+    "subHeadings": {
+      "gotQuestion": "Hai una domanda?",
+      "haveQuestions": "Hai delle domande? Ci piacerebbe sentire la tua opinione",
+      "reachOut": "Sentiti libero di contattare i profili social menzionati"
+    },
+    "cards": {
+      "pos1": "Sviluppatore front-end",
+      "pos2": "Sviluppatore back-end",
+      "desc1": "Ciao! Ho progettato il frontend di questo sito. Sono uno studente universitario di informatica, attualmente al secondo anno. Condivido un vivo interesse per lo sviluppo web e il deep learning. Contattaci in caso di domande o vuoi semplicemente salutare!",
+      "desc2": "Ciao! Ho progettato il backend di questo sito. Sono uno studente di tecnologia dell'informazione, attualmente al secondo anno. Condivido un vivo interesse per lo sviluppo web e il deep learning. Contattaci in caso di domande o vuoi solo salutarti!"
+    },
+    "checkGithub": "Controlla Github per il codice completo"
+  },
+  "signIn": {
+    "heading": "Registrati",
+    "form": {
+      "email": "Indirizzo email",
+      "pass": "Parola d'ordine",
+      "submit": "Registrati"
+    },
+    "signUp": "Non hai un account? Iscriviti"
+  },
+  "signUp": {
+    "heading": "Iscriviti",
+    "form": {
+      "fname": "Nome di battesimo",
+      "lname": "Cognome",
+      "email": "Indirizzo email",
+      "pass": "Parola d'ordine",
+      "state": "Stato",
+      "city": "Città",
+      "submit": "Iscriviti"
+    },
+    "signIn": "Hai già un account? registrati"
+  },
+  "helpers": {
+    "top": "Superiore"
+  }
+}

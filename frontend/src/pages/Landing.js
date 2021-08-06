@@ -8,27 +8,24 @@ import {
   Hidden,
   Box,
   withStyles,
-  Fab,
   Container,
 } from "@material-ui/core";
 import LandingCarousel from "../components/LandingCarousel";
 import LandingTimeline from "../components/LandingTimeline";
-import NavigationIcon from "@material-ui/icons/Navigation";
 import WaveBorder from "../components/WaveBorder";
 import { NavLink } from "react-router-dom";
 import { styles } from "../styles/Landing";
+import { Trans, useTranslation } from "react-i18next";
 
 function Landing(props) {
+  const { t } = useTranslation();
   const sentences = {
-    0: "Travelling Outstation and want to Earn while Travelling ?",
-    1: "Looking for Urgent, Time Definite Deliveries at a Lower Cost ?",
+    0: t("landing.traveller"),
+    1: t("landing.user"),
   };
   const [sentence, setSentence] = useState(sentences[0]);
   useEffect(() => {
-    const sentences = [
-      "Travelling Outstation and want to Earn while Travelling ?",
-      "Want Urgent, Time Definite Deliveries at a Lower Cost   ?",
-    ];
+    const sentences = [t("landing.traveller"), t("landing.user")];
     const interval = setInterval(() => {
       // console.log(sentence);
       setSentence((sentence) =>
@@ -40,12 +37,7 @@ function Landing(props) {
   const { classes, theme } = props;
   return (
     <Fragment>
-      <Box
-        display="flex"
-        id="top"
-        justifyContent="center"
-        className={classes.wrapper}
-      >
+      <Box display="flex" justifyContent="center" className={classes.wrapper}>
         <Card className={classes.card} data-aos-delay="200" data-aos="zoom-in">
           <Box justifyContent="space-between">
             <Grid container spacing={1}>
@@ -73,7 +65,9 @@ function Landing(props) {
                     className={classes.extraLargeButton}
                     classes={{ label: classes.extraLargeButtonLabel }}
                   >
-                    SIGNUP FOR FREE NOW!
+                    <Trans i18nKey={"landing.buttons.signUp"}>
+                      SignUp For Free Now!
+                    </Trans>
                   </Button>
                 </NavLink>
               </Grid>
@@ -90,15 +84,6 @@ function Landing(props) {
           </Box>
         </Card>
       </Box>
-      <Fab
-        variant="extended"
-        color="secondary"
-        href="#top"
-        className={classes.navigationTop}
-      >
-        <NavigationIcon />
-        Top
-      </Fab>
       <WaveBorder
         upperColor={theme.palette.secondary.main}
         lowerColor="#FFFFFF"
@@ -108,10 +93,14 @@ function Landing(props) {
       <Box pt={3} pb={2} className={classes.textCenter}>
         <Container maxWidth="sm">
           <Typography className={classes.heading} component="h1">
-            Getting Started.
+            <Trans i18nKey={"landing.headings.gettingStarted"}>
+              Getting Started.
+            </Trans>
           </Typography>
           <Typography color="textSecondary" variant="body2" component="h6">
-            Three easy steps to get Going?
+            <Trans i18nKey={"landing.subHeadings.threeEasySteps"}>
+              Three easy steps to get Going?
+            </Trans>
           </Typography>
         </Container>
         <Container maxWidth="md">
@@ -121,10 +110,12 @@ function Landing(props) {
       <Box pt={3} pb={2} className={classes.textCenter}>
         <Container maxWidth="xs">
           <Typography className={classes.heading} component="h1">
-            Our Story.
+            <Trans i18nKey={"landing.headings.ourStory"}>Our Story.</Trans>
           </Typography>
           <Typography color="textSecondary" variant="body2" component="h6">
-            Get to know how it all started?
+            <Trans i18nKey={"landing.subHeadings.getToKnow"}>
+              Get to know how it all started?
+            </Trans>
           </Typography>
         </Container>
         <Container maxWidth="md">

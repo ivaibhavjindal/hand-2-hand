@@ -1,4 +1,5 @@
 import React from "react";
+import { Trans } from "react-i18next";
 import {
   Box,
   Link,
@@ -68,13 +69,15 @@ function ContactUs({ classes }) {
             variant="caption"
             className={classes.textUpper}
           >
-            Got a Question ?
+            <Trans i18nKey={"contactUs.subHeadings.gotQuestion"}>Got a Question ?</Trans>
           </Typography>
           <Typography className={classes.heading} component="h1">
-            Contact Us.
+            <Trans i18nKey={"contactUs.headings.contact"}>Contact Us.</Trans>
           </Typography>
           <Typography color="textSecondary" variant="body2" component="h6">
-            Have any questions? We’d love to hear from you.
+            <Trans i18nKey={"contactUs.subHeadings.haveQuestions"}>
+              Have any questions? We’d love to hear from you.
+            </Trans>
           </Typography>
         </Container>
       </Box>
@@ -102,10 +105,12 @@ function ContactUs({ classes }) {
       <Box pt={3} pb={2} className={classes.textCenter}>
         <Container maxWidth="xs">
           <Typography className={classes.heading} component="h1">
-            Our Team.
+            <Trans i18nKey={"contactUs.headings.team"}>Our Team.</Trans>
           </Typography>
           <Typography color="textSecondary" variant="body2" component="h6">
-            Feel free to reach out at mentioned Social profiles
+            <Trans i18nKey={"contactUs.subHeadings.reachOut"}>
+              Feel free to reach out at mentioned Social profiles
+            </Trans>
           </Typography>
         </Container>
       </Box>
@@ -121,11 +126,13 @@ function ContactUs({ classes }) {
       <Grid container spacing={2}>
         <Grid item xs={12} className={classes.textCenter}>
           <Typography className={classes.heading} component="h1">
-            Technologies Used.
+            <Trans i18nKey={"contactUs.headings.techUsed"}>Technologies Used.</Trans>
           </Typography>
           <Link href="https://github.com/ivaibhavjindal/hand-2-hand">
             <Typography color="primary" variant="h6">
-              Check Github for complete Code
+              <Trans i18nKey={"contactUs.checkGithub"}>
+                Check Github for complete Code
+              </Trans>
             </Typography>
           </Link>
         </Grid>

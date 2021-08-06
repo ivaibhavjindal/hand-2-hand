@@ -9,6 +9,7 @@ import {
   Select,
 } from "@material-ui/core";
 import { NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function SignUpForm(props) {
   const {
@@ -29,6 +30,9 @@ function SignUpForm(props) {
     selectState,
     ...classes
   } = props;
+
+  const { t } = useTranslation();
+
   return (
     <form className={classes.form} onSubmit={handleSubmit} noValidate>
       <Grid container spacing={2}>
@@ -40,7 +44,7 @@ function SignUpForm(props) {
             required
             fullWidth
             id="firstName"
-            label="First Name"
+            label={t('signUp.form.fname')}
             autoFocus
             value={firstName}
             onChange={handleFirstNameChange}
@@ -52,7 +56,7 @@ function SignUpForm(props) {
             required
             fullWidth
             id="lastName"
-            label="Last Name"
+            label={t('signUp.form.lname')}
             name="lastName"
             autoComplete="lname"
             value={lastName}
@@ -65,7 +69,7 @@ function SignUpForm(props) {
             required
             fullWidth
             id="email"
-            label="Email Address"
+            label={t('signUp.form.email')}
             name="email"
             autoComplete="email"
             value={email}
@@ -78,7 +82,7 @@ function SignUpForm(props) {
             required
             fullWidth
             name="password"
-            label="Password"
+            label={t('signUp.form.pass')}
             type="password"
             id="password"
             autoComplete="current-password"
@@ -88,7 +92,7 @@ function SignUpForm(props) {
         </Grid>
         <Grid item xs={12}>
           <FormControl variant="outlined" fullWidth>
-            <InputLabel htmlFor="state">State *</InputLabel>
+            <InputLabel htmlFor="state">{`${t('signUp.form.state')} *`}</InputLabel>
             <Select
               native
               value={state}
@@ -106,7 +110,7 @@ function SignUpForm(props) {
         </Grid>
         <Grid item xs={12}>
           <FormControl variant="outlined" fullWidth>
-            <InputLabel htmlFor="city">City *</InputLabel>
+            <InputLabel htmlFor="city">{`${t('signUp.form.city')} *`}</InputLabel>
             <Select
               native
               value={city}
@@ -130,12 +134,12 @@ function SignUpForm(props) {
         color="primary"
         className={classes.submit}
       >
-        Sign Up
+        {t('signUp.form.submit')}
       </Button>
       <Grid container justify="flex-end">
         <Grid item>
           <Link component={NavLink} to="/users/signin" variant="body2">
-            Already have an account? Sign in
+            {t('signUp.signIn')}
           </Link>
         </Grid>
       </Grid>

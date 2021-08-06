@@ -1,4 +1,5 @@
 import React from "react";
+import { Trans }  from "react-i18next";
 import {
   Avatar,
   CssBaseline,
@@ -12,6 +13,7 @@ import { useFormInput } from "../hooks/useFormInput";
 import { states } from "../shared/states";
 import { cities } from "../shared/cities";
 import SignUpForm from "../components/SignUpForm";
+
 
 function SignUp({ classes }) {
   const [firstName, handleFirstNameChange, resetFirstName] = useFormInput("");
@@ -32,8 +34,7 @@ function SignUp({ classes }) {
       console.log(selectedState);
       return Object.keys(cities[selectedState]).map((city) => (
         <option key={city} value={city}>
-          {" "}
-          {city}{" "}
+          {city}
         </option>
       ));
     }
@@ -62,7 +63,7 @@ function SignUp({ classes }) {
           <LockOutlinedIcon />
         </Avatar>
         <Typography component="h1" variant="h5">
-          Sign up
+          <Trans i18nKey={"signUp.heading"}>Sign up</Trans>
         </Typography>
         <SignUpForm
           firstName={firstName}

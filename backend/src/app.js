@@ -13,8 +13,8 @@ const User = require("../src/mongoSchema/authSchema");
 const passportLocalMongoose = require("passport-local-mongoose");
 
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json())
-app.use(bodyParser.text({ type: 'application/graphql' }));
+app.use(bodyParser.json());
+app.use(bodyParser.text({ type: "application/graphql" }));
 app.use(cors());
 app.use(
   require("express-session")({
@@ -26,7 +26,15 @@ app.use(
 );
 app.use(passport.initialize());
 app.use(passport.session());
-passport.use(new LocalStrategy(User.authenticate()));
+passport.use(
+  new LocalStrategy(
+    {
+      usernameField: "email",
+      passwordField: "password",
+    },
+    User.authenticate()
+  )
+);
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
@@ -37,37 +45,30 @@ app.get("/app", function (req, res) {
 app.post("/register", function (req, res) {
   User.register(
     new User({
-      username: req.body.username,
-      name: req.body.name,
-      email: req.body.email,
+      username: req.body.email,
     }),
     req.body.password,
     function (err, user) {
       if (err) {
         console.log(err);
+        res.send(false);
+      } else {
+        passport.authenticate("local")(req, res, function () {
+          console.log("registered");
+          res.send(true);
+        });
       }
-      passport.authenticate("local")(req, res, function () {
-        console.log("registered");
-        res.send("done");
-      });
     }
   );
 });
 
-app.post(
-  "/login",
-  passport.authenticate("local", {
-    successRedirect: "/success",
-    failureRedirect: "/error",
-  }),
-  function (req, res) {
-    res.send("hello");
-  }
-);
+app.post("/login", passport.authenticate("local"), function (req, res) {
+  res.send(true);
+});
 
 app.get("/logout", function (req, res) {
   req.logOut();
-  res.send("done");
+  res.send(true);
 });
 
 app.get("/success", function (req, res) {
@@ -77,10 +78,10 @@ app.get("/success", function (req, res) {
 
 app.get("/check", function (req, res) {
   if (req.isAuthenticated()) {
-    res.send("Logged in");
+    res.send({ loggedIn: true });
     console.log(req.user);
   } else {
-    res.send("logged out");
+    res.send({ loggedIn: false });
   }
 });
 
@@ -97,6 +98,8 @@ app.use(
   })
 );
 
-app.listen(process.env.PORT || 3000, function () {
-  console.log("Server started ..");
+const PORT = process.env.PORT || 8000;
+
+app.listen(PORT, function () {
+  console.log("Server started at PORT: " + PORT);
 });

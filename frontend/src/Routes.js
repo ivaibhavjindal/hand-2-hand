@@ -5,11 +5,13 @@ import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import DashBoard from "./components/DashBoard";
 import ContactUs from "./pages/ContactUs";
+import Explore from "./pages/Explore";
 
 function Routes() {
   return (
     <Switch>
       <Route exact path="/" component={Landing} />
+      <Route exact path="/explore" component={Explore} />
       <Route exact path="/users/dashboard" component={DashBoard} />
       <Route exact path="/users/signin" component={SignIn} />
       <Route exact path="/users/signup" component={SignUp} />

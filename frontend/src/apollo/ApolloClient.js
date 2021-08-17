@@ -1,6 +1,7 @@
 import { ApolloClient, HttpLink, InMemoryCache } from "@apollo/client";
+import env from "../config/env";
 
-const httpLink = new HttpLink({ uri: "http://localhost:3000/app/graphiql" });
+const httpLink = new HttpLink({ uri: env.baseURL + "app/graphiql" });
 
 const client = new ApolloClient({
   link: httpLink,

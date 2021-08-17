@@ -15,7 +15,10 @@ const passportLocalMongoose = require("passport-local-mongoose");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(bodyParser.text({ type: "application/graphql" }));
-app.use(cors());
+app.use(cors({
+  origin: "http://localhost:4000",
+  credentials: true
+}));
 app.use(
   require("express-session")({
     secret:

@@ -88,10 +88,14 @@
     "form": {
       "fname": "First Name",
       "lname": "Last Name",
+      "uname": "User Name",
+      "address": "Street Address",
+      "phone": "Phone Number",
       "email": "Email Address",
       "pass": "Password",
       "state": "State",
       "city": "City",
+      "gender": "Gender",
       "submit": "Sign up"
     },
     "signIn": "Already have an account? Sign in"

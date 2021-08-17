@@ -10,6 +10,7 @@ import { styles } from "../styles/SignIn";
 import { useFormInput } from "../hooks/useFormInput";
 import { useToggle } from "../hooks/useToggle";
 import SignInForm from "../components/SignInForm";
+import axios from "../axios/axios";
 
 function SignIn({ classes }) {
   const [showPassword, toggleShowPassword] = useToggle(false);
@@ -21,6 +22,17 @@ function SignIn({ classes }) {
     e.preventDefault();
     console.log("Email:", email);
     console.log("Password:", password);
+
+    axios
+      .post("login", {
+        email: email,
+        password: password,
+      })
+      .then((res) => {
+        console.log(res.data);
+      })
+      .catch((err) => console.error(err));
+
     resetEmail();
     resetPassword();
   };
@@ -43,6 +55,7 @@ function SignIn({ classes }) {
           handleSubmit={handleSubmit}
           showPassword={showPassword}
           toggleShowPassword={toggleShowPassword}
+          isSignUp={false}
           {...classes}
         />
       </Paper>

@@ -22,6 +22,7 @@ function SignInForm(props) {
     handleSubmit,
     showPassword,
     toggleShowPassword,
+    isSignUp,
     ...classes
   } = props;
 
@@ -35,7 +36,7 @@ function SignInForm(props) {
         required
         fullWidth
         id="email"
-        label={t('signIn.form.email')}
+        label={t("signIn.form.email")}
         name="email"
         autoComplete="email"
         autoFocus
@@ -43,7 +44,9 @@ function SignInForm(props) {
         onChange={handleEmailChange}
       />
       <FormControl variant="outlined" fullWidth>
-        <InputLabel htmlFor="password">{`${t('signIn.form.pass')}*`}</InputLabel>
+        <InputLabel htmlFor="password">{`${t(
+          "signIn.form.pass"
+        )}*`}</InputLabel>
         <OutlinedInput
           name="password"
           id="password"
@@ -72,12 +75,16 @@ function SignInForm(props) {
         color="primary"
         className={classes.submit}
       >
-        {t('signIn.form.submit')}
+        {isSignUp ? t("signUp.form.submit") : t("signIn.form.submit")}
       </Button>
       <Grid container justify="flex-end">
         <Grid item>
-          <Link component={NavLink} to="/users/signup" variant="body2">
-            {t('signIn.signUp')}
+          <Link
+            component={NavLink}
+            to={`/users/${isSignUp ? "signin" : "signup"}`}
+            variant="body2"
+          >
+            {isSignUp ? t("signUp.signIn") : t("signIn.signUp")}
           </Link>
         </Grid>
       </Grid>

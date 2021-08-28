@@ -1,0 +1,102 @@
+{
+  "header": {
+    "home": "Zuhause",
+    "explore": "Erkunden",
+    "contactUs": "Kontaktiere Uns",
+    "signIn": "Einloggen",
+    "signUp": "Anmelden"
+  },
+  "footer": {
+    "locales": {
+      "en": "Englisch",
+      "hi": "Hindi",
+      "fr": "Französisch",
+      "de": "Deutsche",
+      "it": "Italienisch",
+      "es": "Spanisch"
+    },
+    "madeWith": "Gemacht Mit",
+    "copyright": "Urheberrechte ©"
+  },
+  "landing": {
+    "traveller": "Reisen Außenstation und möchten auf Reisen verdienen?",
+    "user": "Möchten Sie dringende, zeitlich definierte Lieferungen zu geringeren Kosten?",
+    "headings": {
+      "gettingStarted": "Beginnen",
+      "ourStory": "Unsere Geschichte."
+    },
+    "subHeadings": {
+      "threeEasySteps": "Drei einfache Schritte, um loszulegen?",
+      "getToKnow": "Erfahren Sie, wie alles begann?"
+    },
+    "buttons": {
+      "signUp": "Jetzt kostenlos registrieren!"
+    },
+    "timeline": {
+      "date1": "August 2019",
+      "date2": "Juli 2020",
+      "date3": "Juli 2020",
+      "date4": "August 2020",
+      "head1": "HackerStack Hackathon",
+      "head2": "Voll Stapel Projekt",
+      "head3": "Hand-2-Hand das Lager",
+      "head4": "Essen Schlafen Kode Wiederholen.",
+      "subHead1": "Die Idee wurde von Atul während des ersten Hackathons vorgeschlagen, an dem wir teilgenommen haben, obwohl wir sie nicht gewonnen haben. Die Idee blieb bei uns",
+      "subHead2": "Wir diskutierten über Ideen, um ein Full-Stack-Projekt zu erstellen, und diese eine Idee stach heraus.",
+      "subHead3": "Wir haben mit dem Projekt begonnen, ein Github-Repository eingerichtet und mit dem Codieren begonnen.",
+      "subHead4": "Wir hatten eine gute Zeit am College und programmierten durchgehend, um es so schnell wie möglich zu beenden."
+    }
+  },
+  "contactUs": {
+    "headings": {
+      "contact": "Kontaktiere Uns",
+      "team": "Unsere Mannschaft.",
+      "techUsed": "Verwendete Technologien."
+    },
+    "form": {
+      "fname": "Vorname",
+      "lname": "Nachname",
+      "email": "E-Mail-Addresse",
+      "message": "Botschaft",
+      "submit": "Nachricht senden",
+      "success": "Nachricht erfolgreich gesendet!"
+    },
+    "subHeadings": {
+      "gotQuestion": "Hast du eine Frage?",
+      "haveQuestions": "Haben Sie Fragen? Wir würden gerne von Ihnen hören.",
+      "reachOut": "Sie können sich gerne an die genannten sozialen Profile wenden."
+    },
+    "cards": {
+      "pos1": "Frontend-Entwickler",
+      "pos2": "Backend-Entwickler",
+      "desc1": "Hallo! Ich habe das Frontend dieser Seite entworfen. Ich bin ein Informatik-Student, derzeit in meinem zweiten Jahr. Ich teile ein großes Interesse an Webentwicklung und Deep Learning. Wenden Sie sich bei Fragen an oder möchten Sie einfach nur Hallo sagen!",
+      "desc2": "Hallo! Ich habe das Backend dieser Seite entworfen. Ich bin ein Student der Informationstechnologie, derzeit in meinem zweiten Jahr. Ich teile ein großes Interesse an Webentwicklung und Deep Learning. Wenden Sie sich bei Fragen an oder möchten Sie einfach nur Hallo sagen!"
+    },
+    "checkGithub": "Überprüfen Sie Github auf vollständigen kode"
+  },
+  "signIn": {
+    "heading": "Einloggen",
+    "form": {
+      "email": "E-Mail-Addresse",
+      "pass": "Passwort",
+      "submit": "Einloggen"
+    },
+    "signUp": "Sie haben noch keinen konto? Anmelden"
+  },
+  "signUp": {
+    "heading": "Anmelden",
+    "form": {
+      "fname": "Vorname",
+      "lname": "Nachname",
+      "email": "E-Mail-Addresse",
+      "pass": "Passwort",
+      "state": "Zustand",
+      "city": "Stadt",
+      "submit": "Anmelden"
+    },
+    "signIn": "Sie haben bereits ein Konto? Einloggen"
+  },
+  "helpers": {
+    "top": "oben"
+  }
+}
